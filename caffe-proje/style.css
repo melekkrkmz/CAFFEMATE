@@ -1,0 +1,468 @@
+*{
+    font-family: 'Aboreto', cursive;
+    font-family: 'Castoro Titling', cursive;
+    font-family: 'Covered By Your Grace', cursive;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Lilita One', cursive;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+*{
+    margin:0;
+    padding: 0%;
+    box-sizing: border-box;
+   
+}
+/* --------------------------------------NAVBAR KISMI-------------------------------------------- */
+
+.navbar-box{
+    display:flex;
+    justify-content: space-evenly;
+    height: 100px;
+    align-items: center;
+    background-color: black;
+    color: white;
+    position:sticky;
+    top: 0;
+    border-bottom: 1px solid white;
+  
+    
+}
+.navbar ul{
+    display: flex;
+   
+}
+  
+.navbar ul li,a{
+    list-style-type: none;
+    margin-right: 15px;
+    color:white;
+    text-decoration: none;
+    font-size: 17px;
+    transition: all 3s;
+
+}
+.navbar li a:hover{
+    color: rgb(223, 87, 37);
+ 
+}
+/* ------------------------------------------navbara animasyon ekle--------------------------------- */
+
+#bar-ikon{
+    display: none;
+}
+
+ i{
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 3s;
+
+}
+.ikon i:hover{
+    color: rgb(223, 87, 37);
+}
+.search-containar{
+   position: absolute;
+   top:100%;
+   right: 0%;
+   width: 20em;
+   height: 3.2em;
+   display: flex;
+   align-items: center;
+   border: 1px solid white;
+   transform: scaleY(0);
+   
+   
+}
+.search-containar.open{
+    transform: scaleY(1);
+
+}
+
+.search-containar input{
+    width: 100%;
+    height: 100%;
+
+}
+.search-containar label{
+    position: absolute;
+    color: black;
+    right: 10px;
+}
+.search-containar label:hover{
+    color: rgb(223, 87, 37);
+    cursor: pointer;
+}
+.sepet-containar{
+   position: absolute;
+   top:100%;
+   right:-100%;
+   width: 20em;
+   height: 30em;
+   display: flex;
+   align-items: flex-start;
+   border: 1px solid white;
+   transition: all 1s;
+   background-color: black;
+   color: white;
+   
+}
+.sepet-containar.open{
+  right: 0%;
+   
+}
+.shopping-containar{
+    position: relative;
+}
+.sepet-containar-box{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 5px;
+}
+.alınan-sayı{
+    position: absolute;
+    top: -11px;
+    right: -5px;
+    color: rgb(223, 87, 37);
+}
+.ikon{
+    display: flex;
+}
+
+
+
+
+/* -------------------------------------------text containar style------------------------------- */
+
+.text-containar{
+    height: 46em;
+    background-image: url(./resimler/anasayfa/coffee-g05e9afc6d_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;   
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+    background-position-y: center;
+}
+.text{
+    color: white;
+    flex-basis: 45%;
+    font-size: 25px;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.text h1{
+    color:rgb(223, 87, 37) ;
+}
+.text.about, button{
+    color: white;
+    background-color:rgb(253 133 89);
+    padding: 15px;
+    border: none;
+    font-size: 20px;
+    width: 200px;
+    cursor: pointer;
+   
+    
+}
+
+
+
+/* -----------------------------------------about kısmı------------------------------------------ */
+.about-containar{
+    background-color: black;
+    color: white;
+    min-height: 35em;
+    display: flex;
+    align-items: center;
+    padding: 0px 40px;
+   
+}
+.header{
+   text-align: center;
+   font-size: 35px;
+   color:rgb(223, 87, 37) ;
+   font-weight: 600;
+   padding: 20px;
+   height: 80px;
+   background-color: black;
+}
+.about-text{
+    display: flex;
+    padding: 0px 30px;
+    flex-direction: column;
+    min-height: 350px;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+  /*--------------------------------------------------menü kısmı --------------------------------------- */
+  .menu-containar{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+  .menu-banner-containar{
+    flex-basis: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  .menu-box{
+    height: 350px;
+    width: 300px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    background-color: rgb(20 19 19);
+    margin-left: 20px;
+    margin-top: 20px;
+    transition: all 3s;
+  }
+  .menu-box:hover{
+    background-color:rgb(205, 161, 103);
+    color: black;
+    border: 2px solid gray;
+    
+  }
+  .daha-fazla{
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    
+  }
+  /* --------------------------------------------prouducts kısmı--------------------------------------- */
+  .prouducts{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .prouduct-box{
+    height: 400px;
+    width: 300px;
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 15px;
+    margin-bottom: 20px;
+
+  }
+  .prouduct-containar{
+    display: flex;
+    flex-basis: 90%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+  }
+  .prouducts-ikon i{
+    border: 1px solid white;
+    margin-left: 5px;
+    padding: 10px;
+  }
+
+  /*-------------------------------------- REVİEW KISMI----------------------------------------------- */
+  .review{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+  }
+  .review-box{
+    height: 400px;
+    width: 300px;
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 15px;
+    margin-bottom: 20px;
+  }
+  /* -CONTAİNAR OLAN YERLERE RESPONSİVE HALE İLE UĞRAŞMAMAK İÇİN JUSTFY-CONTENTENT ÖZELLİĞİ VERDİM  */
+  .review-banner img{
+    height: 100px;
+    width: 100px;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+  .yorum-ikon i{
+    font-size: 80px;
+    color:rgb(253 133 89) ;
+
+  }
+  .review-containar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 90%;
+    justify-content: space-evenly;        
+  }
+/*----------------------------------------------- CONTACT KISMI---------------------------------------- */
+.contact{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.contact-containar{
+    flex-basis: 90%;
+    display: flex;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid white;
+    width: 100%;
+    color: white;
+    background-color: rgb(20 19 19);
+}
+.input-box input{
+    width: 300px;
+    padding: 10px;
+    background-color: rgb(20 19 19);
+    border: 1px solid white;
+
+}
+
+/* --------------------------------BLOG KISMI--------------------------------------------- */
+.blog{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.blog-containar{
+    flex-basis: 90%;
+    display: flex;
+
+}
+/* -----------------------------BU KISIM KARIŞIK VE UZUN OLDU GALİBA BAKABİLİR MİSİNİZ--------------------  */
+.blog-box{
+    height: 400px;
+    width: 310px;
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    position: relative;
+   
+}
+.blog-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+}
+.blog-icerik{
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+/* -----------------------------sosyal medya ikonları----------------------------------------- */
+
+.socsial-ikon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:150px;
+    background-color: black;
+
+}
+.socsial-ikon i{
+    color: white;
+    background-color: burlywood;
+    padding: 20px;
+    font-size: 25px;
+    margin-left: 10px;
+    border-radius: 50%;
+    
+}
+.socsial-ikon i:hover{
+    transform: rotate(135deg);
+    
+}
+
+/* -------------------------------MEDİA QUERY KISMI------------------------------------------- */
+
+@media  (max-width:991px){
+    #bar-ikon{
+        display:inline-block;
+    }
+    .navbar-box{
+        justify-content: space-between;
+        padding: 0px 30px;
+
+    }
+    
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: white;
+        width: 15em;
+        transition: all 1s;
+    }
+    .navbar.open{
+        right: 0;
+       
+    }
+    .navbar ul{
+        display: block; 
+
+    }
+    .navbar ul li{
+        padding: 1.5em;
+    }
+    .navbar ul a{
+        font-size: 25px;
+        color: black;
+    }
+    .text-containar .text{
+        font-size: 22px;
+    }
+    .about-img img{
+        width: 440px;
+    }
+   .menu-banner-containar{
+    justify-content: center;
+   }
+   .harita iframe{
+    width: 430px;
+    height: 400px;
+   }
+}
+
+
+@media  (max-width:770px){
+    .sepet-containar{
+        width: 15em;
+    }
+    .text-containar{
+        justify-content: center;
+        
+    }
+    .text-containar .text{
+        flex-basis: 60%;
+        font-size: 20px;
+    }
+}
